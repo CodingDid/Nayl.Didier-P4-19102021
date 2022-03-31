@@ -69,7 +69,8 @@ var array_map = function(array, callback) {
   }
   else {
     for (i = 0; i < array_length; i++) {
-      callback_params = original_callback_params;
+      // Modif du callback_params mis en comment
+      // callback_params = original_callback_params;
       callback_params.splice(0, 0, array[i]);
       array_return.push(callback.apply(this, callback_params));
     }

@@ -517,7 +517,8 @@ button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    opacity: 0;
+    /*opacity: 0;*/
+    opacity: 1;
     z-index: 500;
     transition: all .3s ease-in-out;
 }
@@ -651,8 +652,13 @@ label,
 .btn,
 a {
     font-family: "helvetica";
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: bold;
+
+    /* Modif du font-weight en test SEO 600, 800, 900, bolder*/
     color: #575757!important;
+
+
 }
 
 .container {
@@ -678,7 +684,9 @@ a {
 }
 
 p {
-    font-size: 11px;
+    /*font-size: 11px;*/
+    /* Modif taille police SEO*/
+    font-size: 12px;
 }
 
 .tight-width-whitespace {
@@ -719,8 +727,11 @@ h3 {
 
 .med-width-whitespace {
     max-width: 800px;
-    margin: auto auto auto auto;
-    box-shadow: 0px 0px 0px #000000;
+    /*margin: auto auto auto auto;*/
+    /* Modif du margin à un seul auto */
+    margin: auto;
+    /*Valeur intrigantes sur box-shadow */
+    /*box-shadow: 0px 0px 0px #000000;*/
 }
 
 h1 {
@@ -742,6 +753,9 @@ h4 {
 
 .portfolio-thumb {
     margin-bottom: 24px;
+/*    Ajout de width et height SEO */
+    width: 100%;
+    height: 100%;
 }
 
 .portfolio-row {
@@ -754,8 +768,14 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
-    padding: 40px 40px 40px 40px;
+    /*background-color: rgba(165, 147, 99, 0.7);*/
+    /*Modif du bgc pour contrast SEO*/
+    /*background-color: #432112;*/
+    background: #97380C;
+    border-radius: 10px;
+    /*padding: 40px 40px 40px 40px;*/
+    padding: 40px;
+
 }
 
 .bold-link {
@@ -772,15 +792,23 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    /*background-color: #F3976C;*/
+    /* Modif color à la valeur #97380C SEO*/
+    background-color: #97380C;
+
 }
 
 .tc-white {
-    color: #F3976C!important;
+    /*color: #F3976C!important;*/
+    /* rectification de color bootstrap en blanc */
+    color: #FFFFFF!important;
+    font-weight: bold;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    /* Modif color à #97380C SEO */
+    /*background: #F3976C;*/
+    background: #97380C;
     color: #FFFFFF!important;
 }
 
@@ -823,7 +851,8 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("../img/image-de-presentation.bmp");
+    /*background-image: url("../img/image-de-presentation.bmp");*/
+    background-image: url("../img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -874,8 +903,12 @@ h4 {
         position: relative;
     }
     .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        /*padding-left: constant(safe-area-inset-left);*/
+        /*padding-right: constant(safe-area-inset-right);*/
+
+        /* Modif de la valeur ou attrib constant qui n'existe pas !*/
+        padding-right: env(safe-area-inset-right);
+        padding-right: env(safe-area-inset-right);
     }
     .bloc-group,
     .bloc-group .bloc {
@@ -884,9 +917,10 @@ h4 {
     }
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
+        /* Modif de la valeur ou attrib constant qui n'existe pas !*/
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
     }
 }
 
