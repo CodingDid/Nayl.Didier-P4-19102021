@@ -6,7 +6,7 @@
     <meta name="description" content="Contact entreprise de web design à lyon - La Panther Agence à votre service">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
-    
+	<link rel="preload">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
@@ -76,11 +76,12 @@
 <!-- bloc-6 END -->
 
 <!-- bloc-7 -->
-<section class="bloc bgc-white l-bloc" id="bloc-7">
+
+<div class="bloc bgc-white l-bloc" id="bloc-7">
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+				<form id="form_1" novalidate data-success-msg="Your message has been sent." data-fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 					<div class="form-group">
 						<label>
 							Nom
@@ -116,7 +117,7 @@
 			</div>
 		</div>
 	</div>
-</section>
+</div>
 <!-- bloc-7 END -->
 
 <!-- ScrollToTop Button -->
@@ -132,25 +133,27 @@
 				<p class="text-center white">
 					Agence La Panthère - Agence web basée à Lyon.<br>
 				</p>
-				<div class="row row-no-gutters social">
+<!--				<div class="row row-no-gutters social">-->
+<!--				Modif de la balise div social-->
+				<div class="social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-twitter icon-md">twitter</span></a>
+							<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-facebook icon-md">facebook</span></a>
+							<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md">dribbble</span></a>
+							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-instagram icon-md">instagram</span></a>
+							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
 						</div>
 					</div>
 				</div>
