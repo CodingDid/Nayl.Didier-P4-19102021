@@ -1,12 +1,3 @@
-@font-face {
-    font-display: optional;
-    /*font-family: FonteExemple;*/
-    /*src: url(/chemin/vers/fonts/examplefont.woff) format('woff'),*/
-    /*url(/chemin/vers/fonts/examplefont.eot) format('eot');*/
-    /*font-weight: 400;*/
-    /*font-style: normal;*/
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -37,10 +28,6 @@ a:hover {
     background-color: #FFF;
 }
 .keywords{
-    /*width: 100%;*/
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*flex-wrap: nowrap;*/
     text-align: center;
     margin-top: 1rem;
     color: #FFFFFF;
@@ -533,10 +520,9 @@ button {
     width: 40px;
     height: 40px;
     position: fixed;
-    /*bottom: 20px;*/
+    bottom: 20px;
     right: 20px;
-    /*opacity: 0;*/
-    /*opacity: 1;*/
+    opacity: 0;
     z-index: 500;
     transition: all .3s ease-in-out;
 }
@@ -547,8 +533,7 @@ button {
 
 .showScrollTop {
     font-size: 14px;
-    /*opacity: 1;*/
-    opacity: 0;
+    opacity: 1;
 }
 
 a[data-lightbox] {
@@ -673,11 +658,8 @@ a {
     font-family: "helvetica";
     /*font-weight: 400;*/
     font-weight: bold;
-
     /* Modif du font-weight en test SEO 600, 800, 900, bolder*/
     color: #575757!important;
-
-
 }
 
 .container {
@@ -706,6 +688,7 @@ p {
     /*font-size: 11px;*/
     /* Modif taille police SEO*/
     font-size: 13px;
+    font-weight: bold;
 }
 
 .tight-width-whitespace {
@@ -731,7 +714,6 @@ p {
     display: flex;
     justify-content: center;
     max-width: 400px;
-    /*max-width: 100%;*/
     margin: auto;
 }
 
@@ -772,6 +754,8 @@ h4 {
 .white {
     color: #FFFFFF!important;
     font-size: 14px;
+    /*Modif du font de la police en gras SEO*/
+    font-weight: bold;
 }
 
 .portfolio-thumb {
@@ -792,9 +776,9 @@ h4 {
 
 .black-background {
     /*background-color: rgba(165, 147, 99, 0.7);*/
-    /*Modif du bgc pour contrast SEO*/
     /*background-color: #432112;*/
     background: #97380C;
+    /*Modif du bgc #97380C pour contrast SEO*/
     border-radius: 10px;
     /*padding: 40px 40px 40px 40px;*/
     padding: 40px;
@@ -871,11 +855,13 @@ h4 {
 
 .bg-banniere {
     /*background-image: url("../img/agence-la-panthere.jpg");*/
+    /*Modif du bgc img pour un format image en webp*/
     background-image: url("../img/webp/agence-la-panthere.webp");
 }
 
 .bg-presentation {
     /*background-image: url("../img/image-de-presentation.bmp");*/
+    /*Modif du bgc img pour un format image en webp*/
     background-image: url("../img/webp/image-de-presentation.webp");
 }
 
@@ -903,6 +889,7 @@ h4 {
 }
 
 /*@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {*/
+/* Modif @media device en min-width & max-width */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
 .b-parallax {
@@ -911,6 +898,7 @@ h4 {
 }
 
 /*@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {*/
+/* Modif @media device en min-width & max-width */
 @media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
